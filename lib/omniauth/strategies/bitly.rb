@@ -38,7 +38,15 @@ module OmniAuth
         @raw_info ||= MultiJson.decode(access_token.get('/v3/user/info').body)
       end
 
+      def request_phase
+        p "***" * 20
+        p "about to redirect. with authorize params: #{authorize_params}"
+        p "***" * 20
+        super
+      end
+
       def callback_phase
+        #byebug
         request.params["state"] = session["omniauth.state"] unless request.params["state"]
         super
       end
