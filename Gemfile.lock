@@ -6,20 +6,20 @@ PATH
       omniauth-oauth2 (~> 1.4)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
-    docile (1.1.5)
+    docile (1.4.1)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     hashie (5.0.0)
-    json (1.8.2)
+    json (2.10.1)
     jwt (2.7.0)
     multi_json (1.15.0)
     multi_xml (0.6.0)
@@ -38,7 +38,7 @@ GEM
       oauth2 (>= 1.4, < 3)
       omniauth (~> 2.0)
     public_suffix (4.0.6)
-    rack (3.0.9.1)
+    rack (3.0.12)
     rack-protection (3.0.5)
       rack
     rack-test (0.6.3)
@@ -54,11 +54,12 @@ GEM
     rspec-mocks (2.99.3)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.4)
-    simplecov (0.10.0)
-      docile (~> 1.1.0)
-      json (~> 1.8)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.13.1)
+    simplecov_json_formatter (0.1.4)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
@@ -79,4 +80,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.4
+   2.6.3
