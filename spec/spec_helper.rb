@@ -14,3 +14,8 @@ RSpec.configure do |config|
   config.extend  OmniAuth::Test::StrategyMacros, :type => :strategy
 end
 
+RSpec.configure do |config|
+  config.expect_with :rspec do |expectations|
+    expectations.syntax = :should
+  end
+end
