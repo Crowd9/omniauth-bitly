@@ -60,7 +60,7 @@ GEM
       rack (>= 3.0.0, < 4)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (13.0.1)
+    rake (13.4.2)
     rexml (3.4.4)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -104,4 +104,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.5.23
+  4.0.24
